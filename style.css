@@ -9,6 +9,7 @@ body{
 }
 
 .homePage{
+    display: block;
     width: 100%;
     height: auto;
     display: block;
@@ -37,6 +38,10 @@ body{
     position: relative;
     left: 13%;
     top: 10vh;
+}
+
+.skillPage{
+    display: none;
 }
 
 .main-title{
@@ -111,7 +116,7 @@ a:hover{
 header{
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     position: relative;
     left: 45%;
     top: 5px;
@@ -119,7 +124,8 @@ header{
 .headBut{
     width: 10%;
     border: none;
-    border-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-bottom: solid black 1px;
     font-size: 20px;
     background-color: transparent;
@@ -142,7 +148,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 10px;
     border-radius: 10px;
 }
 p{
@@ -157,7 +163,113 @@ p{
     top: 10vh;
 }
 
+.skillPage{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 13%;
+    top: 10vh;
+}
 
+.skillContent{
+    width: 70%;
+    min-height: 70vh;
+    border: solid rgba(2,2,2,.4) 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.skillContent h1{
+    margin-bottom: 30px;
+}
+
+.skillContent ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    width: 100%;
+}
+
+.skillContent li{
+    width: 180px;
+    padding: 20px;
+    border-radius: 12px;
+    border: solid rgba(0,0,0,.2) 1px;
+    text-align: center;
+    font-size: 20px;
+    transition: .4s;
+    cursor: pointer;
+    background: white;
+}
+
+.skillContent li:hover{
+    transform: translateY(-8px);
+    background: rgb(255,153,0);
+    color: white;
+}
+
+/*==========================
+       PROJECTS
+==========================*/
+
+.projectContent{
+    width:70%;
+    min-height:70vh;
+    border:solid rgba(2,2,2,.4) 1px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.projectContent h1{
+    margin-bottom:20px;
+}
+
+.projectContent p{
+    font-size:24px;
+    color:gray;
+}
+
+/*==========================
+       CONTACT
+==========================*/
+
+.contactContent{
+    width:70%;
+    min-height:70vh;
+    border:solid rgba(2,2,2,.4) 1px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.contactContent h1{
+    margin-bottom:40px;
+}
+
+.contactContent .socials{
+    display:flex;
+    gap:35px;
+    font-size:40px;
+}
+
+.contactContent .socials a{
+    transition:.4s;
+}
+
+.contactContent .socials a:hover{
+    transform:scale(1.2);
+}
 
 
 /* ---------- Mobile ---------- */
@@ -224,13 +336,13 @@ p{
     display: flex;
     gap: 20px;
     position: relative;
-    left: 5%;
+    left: 0%;
     top: 5px;
 }
 .headBut{
     width: 20%;
     border: none;
-    border-radius: 10px;
+    
     border-bottom: solid black 1px;
     font-size: 16px;
     background-color: transparent;
@@ -251,6 +363,40 @@ p{
     align-items: center;
     padding: 10px;
     border-radius: 10px;
+}
+
+
+
+.skillPage,
+.projectPage,
+.contactPage,
+.aboutPage{
+    left:0;
+    top:40px;
+    display:none;
+    justify-content:center;
+}
+
+.skillContent,
+.projectContent,
+.contactContent,
+.aboutContent{
+    width:90%;
+    margin:auto;
+}
+
+.skillContent ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+.skillContent li{
+    width:90%;
+}
+
+.contactContent .socials{
+    font-size:32px;
+    gap:25px;
 }
 
 }
