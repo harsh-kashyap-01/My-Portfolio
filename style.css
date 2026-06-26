@@ -348,7 +348,7 @@ header{
     height: 38px;
     font-size: 13px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     background: rgb(240,240,240);
     border: 1px solid rgba(0,0,0,.15);
 }
