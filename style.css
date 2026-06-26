@@ -4,6 +4,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+}
+
+.homePage{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.projectPage{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 13%;
+    top: 10vh;
+}
+.contactPage{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 13%;
+    top: 10vh;
+}
+
+.aboutPage{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 13%;
+    top: 10vh;
+}
 
 .main-title{
     font-size: 50px;
@@ -35,10 +69,14 @@
     font-size: 20px;
     position: relative;
     left: 10%;
-    top: 15vh;
+    top: 18vh;
     cursor: pointer;
+    transition: 0.5s;
 }
-
+.aboutBut:hover{
+    background-color: rgb(0, 9, 141);
+    transform: scale(1.1,1.1);
+}
 footer{
     position: relative;
     left: 11%;
@@ -49,7 +87,12 @@ footer{
 }
 
 a{
-    color: black;
+    color: rgba(0, 0, 0, 0.678);
+    transition: 0.5s;
+}
+a:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(0, 0, 0);
 }
 
 .pfp{
@@ -65,9 +108,75 @@ a{
     top: 20vh;
 }
 
+header{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 45%;
+    top: 5px;
+}
+.headBut{
+    width: 10%;
+    border: none;
+    border-radius: 20px;
+    border-bottom: solid black 1px;
+    font-size: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.headBut:hover{
+    background-color: rgba(73, 173, 255, 0.37);
+    transform: scale(1.1,1.1);
+}
+
+
+
+
+
+.aboutContent{
+    width: 70%;
+    height: auto;
+    min-height: 70vh;
+    border: solid rgba(2, 2, 2, 0.438) 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+}
+p{
+    font-size: 20px;
+}
+
+.contactPage{
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 13%;
+    top: 10vh;
+}
+
+
+
+
 /* ---------- Mobile ---------- */
 
 @media (max-width: 768px){
+
+    body{
+        overflow: hidden;
+    }
+
+
+    a:hover{
+    transform: scale(1.1,1.1);
+    color: rgb(0, 0, 0);
+}
+    .homePage{
+    width: 100%;
+    height: auto;
+}
 
     .main-title{
         font-size: 32px;
@@ -97,7 +206,10 @@ a{
         top: 50px;
         margin: auto;
     }
-
+.aboutBut:hover{
+    background-color: rgb(0, 9, 141);
+    transform: scale(1.1,1.1);
+}
     footer{
         left: 0;
         top: 80px;
@@ -105,5 +217,40 @@ a{
         font-size: 28px;
         flex-wrap: wrap;
     }
+
+
+    header{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 5%;
+    top: 5px;
+}
+.headBut{
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    border-bottom: solid black 1px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.headBut:hover{
+    background-color: rgba(73, 173, 255, 0.37);
+    transform: scale(1.1,1.1);
+}
+
+.aboutContent{
+    width: 80%;
+    height: auto;
+    min-height: 70vh;
+    border: solid rgba(2, 2, 2, 0.438) 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 }
