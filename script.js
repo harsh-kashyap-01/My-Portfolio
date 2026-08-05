@@ -72,7 +72,7 @@ but.forEach(btn => {
         if(btn.innerHTML === "Youtube"){
             content.innerHTML = `
             <section class="page youtube">
-          <iframe src="https://www.youtube.com/@LazyBoi-j1v" frameborder="0"></iframe>
+          
           <a href="https://www.youtube.com/@LazyBoi-j1v" target="_blank"><h1>LINK</h1></a>
         </section>`;
         }
