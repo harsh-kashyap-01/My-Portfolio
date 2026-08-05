@@ -12,7 +12,7 @@ but.forEach(btn => {
             content.innerHTML = `
             <section class="about">
           <h1>About ME!</h1>
-          <img src="new-pfp.jpg" alt="profile-image" />
+          <img src="images/new-pfp.jpg" alt="profile-image" />
           <p>
             Hi, I'm
             <span style="color: #ffd166; font-weight: bold">Lucky</span>, a
@@ -56,11 +56,11 @@ but.forEach(btn => {
             <h1>Project</h1>
             <div class="project-div">
               <h4>Portfolio</h4>
-              <img src="images/port.png" alt="">
+              <img src="images/port.PNG" alt="">
             </div>
             <div class="project-div">
               <h4>Expanse Tracker</h4>
-              <img src="images/app.png" alt="">
+              <img src="images/app.PNG" alt="">
             </div>
             <div class="project-div">
               <h4>The Button Factory</h4>
