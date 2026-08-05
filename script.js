@@ -56,15 +56,15 @@ but.forEach(btn => {
             <h1>Project</h1>
             <div class="project-div">
               <h4>Portfolio</h4>
-              <img src="port.png" alt="">
+              <img src="images/port.png" alt="">
             </div>
             <div class="project-div">
               <h4>Expanse Tracker</h4>
-              <img src="app.png" alt="">
+              <img src="images/app.png" alt="">
             </div>
             <div class="project-div">
               <h4>The Button Factory</h4>
-              <img src="button-imgs.PNG" alt="">
+              <img src="images/button-imgs.PNG" alt="">
             </div>
           </section>`;
         }
