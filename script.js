@@ -1,6 +1,28 @@
 
 let but = document.querySelectorAll(".btn");
 let content = document.getElementById("content");
+
+document.body.onload = () => {
+  content.innerHTML = `
+            <section class="home-section">
+
+    <h1 class="home-title">
+        I write code.
+        <br>
+        Code writes errors.
+    </h1>
+
+    <p class="home-quote">
+        Somehow... we work together.
+    </p>
+
+    <button class="home-troll-btn">
+        Click me. Nothing will happen 👀
+    </button>
+
+</section>
+            `;
+}
 document.onload = () => {
     content.innerHTML = "Hover on nav button to see info";
 }
@@ -9,13 +31,14 @@ but.forEach(btn => {
     btn.addEventListener("click", () => {
         
         if(btn.innerHTML === "About"){
+          content.style.display = "block";
             content.innerHTML = `
             <section class="about">
           <h1>About ME!</h1>
           <img src="images/new-pfp.jpg" alt="profile-image" />
           <p>
             Hi, I'm
-            <span style="color: #ffd166; font-weight: bold">Lucky</span>, a
+            <span style="color: #ffd166; font-weight: bold">Harsh</span>, a
             self-taught
             <span style="font-weight: bold">Front-End Web Developer</span> who
             enjoys turning ideas into real, interactive websites.<br /><br />
@@ -51,6 +74,8 @@ but.forEach(btn => {
         </section>`;
         }
         if(btn.innerHTML === "Projects"){
+                    content.style.display = "block";
+
             content.innerHTML = `
             <section class="page project">
             <h1>Project</h1>
@@ -76,5 +101,55 @@ but.forEach(btn => {
           <a href="https://www.youtube.com/@LazyBoi-j1v" target="_blank"><h1>LINK</h1></a>
         </section>`;
         }
+
+        if(btn.innerHTML === "Contact"){
+                    content.style.display = "block";
+
+            content.innerHTML = `
+            <section class="page contact">
+<h4 style="color: rgb(186, 248, 186); flex-wrap: wrap;">
+  💡 Have a project idea?
+
+🤝 Looking for a collaboration?
+
+🚀 Have an opportunity?
+
+📩 Feel free to reach out! I'd love to hear from you and build something together.
+
+👉 Contact Me! 👈
+
+</h4>          
+          <a href=""><i class="fa-solid fa-envelope"></i>Email</a>
+          <a href=""><i class="fa-brands fa-github"></i>GitHub</a>
+          <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+        </section>
+            `;
+        }
+
+        if(btn.innerHTML === "Home"){
+            content.innerHTML = `
+            <section class="home-section">
+
+    <h1 class="home-title">
+        I write code.
+        <br>
+        Code writes errors.
+    </h1>
+
+    <p class="home-quote">
+        Somehow... we work together.
+    </p>
+
+    <button class="home-troll-btn">
+        Click me. Nothing will happen 👀
+    </button>
+
+</section>
+            `;
+        }
+
+
+
     })
 })
