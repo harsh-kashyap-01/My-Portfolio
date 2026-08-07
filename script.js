@@ -119,10 +119,10 @@ but.forEach(btn => {
 👉 Contact Me! 👈
 
 </h4>          
-          <a href=""><i class="fa-solid fa-envelope"></i>Email</a>
-          <a href=""><i class="fa-brands fa-github"></i>GitHub</a>
-          <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-          <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+          <a href="mailto:harsh1111kashyap@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+          <a href="https://github.com/harsh-kashyap-01"><i class="fa-brands fa-github"></i>GitHub</a>
+          <a href="https://www.linkedin.com/in/harsh-kashyap-98465241b/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a href="https://www.instagram.com/whoh4rsh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i>Instagram</a>
         </section>
             `;
         }
