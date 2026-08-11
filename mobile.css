@@ -17,8 +17,8 @@
         scroll-behavior: smooth;
     }
     .blue-box{
-        width: 50vh;
-        height: 50vh;
+        width: 70vh;
+        height: 70vh;
         border-radius: 60%;
         background: rgb(62, 146, 216);
         position: absolute;
