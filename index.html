@@ -1,40 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kashyap | Web Developer Portfolio</title>
+    <!-- Font Awesome for your skill and contact icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
     <header>
-      <h1>PORTFOLIO</h1>
-      <div>
-        <button>HOME</button>
-        <button onclick="about()">ABOUT</button>
-        <button onclick="skill()">SKILLS</button>
-        <button onclick="project()">PROJECTS</button>
-        <button onclick="contact()">CONTACT</button>
-      </div>
+        <div class="logo">
+            <h2>HARSH<span>.DEV</span></h2>
+        </div>
+        <nav class="nav-buttons">
+            <button onclick="about()" id="btn-about" class="active">About</button>
+            <button onclick="skill()" id="btn-skill">Skills</button>
+            <button onclick="project()" id="btn-project">Projects</button>
+            <button onclick="contact()" id="btn-contact">Contact</button>
+        </nav>
     </header>
 
     <main id="main">
-
-
-
-
-
+        <!-- Default content shown before clicking buttons -->
+        <div class="about">
+            <h1>A passionate Web Developer & Creator 💻✨ I love turning ideas into interactive websites, apps, and unique digital experiences 🚀 I’m always learning, building, and experimenting with new ideas. 🧠🔥 Code it. Create it. Make it unique. 🎨</h1>
+        </div>
     </main>
 
-
-
-    <!-- <div class="transition">
-
-    </div> -->
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
